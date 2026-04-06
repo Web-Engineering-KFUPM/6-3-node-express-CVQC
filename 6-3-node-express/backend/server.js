@@ -10,7 +10,7 @@ app.use(cors());
 app.use(morgan("dev"));
 
 app.get("/", (req, res) => {
-  res.json({ message: "Express server is running" });
+  res.send("Express server is running");
 });
 
 app.get("/api/quote", (req, res) => {
